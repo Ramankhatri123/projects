@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+.glass {
+  @apply bg-white/10 backdrop-blur border border-white/10;
+}
+
+.card-hover {
+  @apply transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-accent-500/30;
+}
+
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
